@@ -162,7 +162,7 @@ module.exports = function(config) {
       ChromeNoSandbox: {
         base: "Chrome",
         // https://github.com/Googlechrome/puppeteer/issues/290#issuecomment-322852784
-        flags: ["--no-sandbox", "--disable-setuid-sandbox"]
+        //flags: ["--no-sandbox", "--disable-setuid-sandbox"]
       }
     },
 
