@@ -147,7 +147,7 @@ module.exports = function(config) {
 
     // level of logging
     // possible values: config.LOG_DISABLE || config.LOG_ERROR || config.LOG_WARN || config.LOG_INFO || config.LOG_DEBUG
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
 
 
     // enable / disable watching file and executing tests whenever any file changes
@@ -157,12 +157,12 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     // run without sandbox for now https://github.com/travis-ci/travis-ci/issues/8836
-    browsers: ["ChromeNoSandbox"],
+    browsers: ["Chrome", "ChromeNoSandbox"],
     customLaunchers: {
       ChromeNoSandbox: {
         base: "Chrome",
         // https://github.com/Googlechrome/puppeteer/issues/290#issuecomment-322852784
-        //flags: ["--no-sandbox", "--disable-setuid-sandbox"]
+        flags: ["--no-sandbox", "--disable-setuid-sandbox"]
       }
     },
 
