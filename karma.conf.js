@@ -157,7 +157,7 @@ module.exports = function(config) {
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     // run without sandbox for now https://github.com/travis-ci/travis-ci/issues/8836
-    browsers: ["Chrome", "ChromeNoSandbox"],
+    browsers: ["Chrome"],
     customLaunchers: {
       ChromeNoSandbox: {
         base: "Chrome",
